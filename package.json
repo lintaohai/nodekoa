@@ -1,0 +1,18 @@
+{
+  "name": "nodekoa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "koa": "^2.5.2",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "koa2-cors": "^2.0.6"
+  }
+}
