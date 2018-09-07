@@ -1,8 +1,13 @@
 var router = require('koa-router')()
+let h2 = require('../service/hello')
 
 router.get('/home', async (ctx, next) => {
-  console.log(ctx.path)
-  ctx.body = 'hello KOA2222...'
+  let query = ['name', 'addr', 'phone', 'avatar_url']
+  
+  await h2(query).then(res => {
+    ctx.body = res
+  })
+  await next()
 })
 
 module.exports = router.routes()

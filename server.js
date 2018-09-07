@@ -1,9 +1,9 @@
 const Koa = require('koa')
 const static = require('koa-static')
-const cors = require('koa2-cors')
 const router = require('./router/index')
 const authCheck = require('./middle/auth-check')
 const corsConfig = require('./middle/cors-config')
+
 let app = new Koa()
 
 app
