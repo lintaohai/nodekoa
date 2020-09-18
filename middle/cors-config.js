@@ -8,4 +8,4 @@ let corsConfig = cors({
   allowHeaders: ['Content-Type', 'Authorization', 'Accept', 'lintaohai', 'token'],
 })
 
-module.exports = corsConfig
+module.exports = ()=> corsConfig

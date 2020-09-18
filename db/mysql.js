@@ -4,13 +4,17 @@ const mysql = require('../config').mysql
 const sequelize = new Sequelize(mysql.database, mysql.user, mysql.password, {
   host: mysql.host,
   dialect: 'mysql',
+  dialectOptions: {
+    dateStrings: true,
+    typeCast: true
+  },
   pool: {
     max: 5,
     min: 0,
     acquire: 30000,
     idle: 1000,
   },
-  storage: 'path/to/database.sqlite'
+  timezone: '+08:00', //改为标准时区
 })
 
 // 测试连接

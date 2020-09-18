@@ -1,9 +1,9 @@
 const config = {
   mysql : {
-    host: '47.106.149.3',
+    host: 'localhost',
     user: 'root',
-    password: '123456',
-    database: 'node_resume'
+    password: 'wf8989',
+    database: 'test'
   }
 }
 
